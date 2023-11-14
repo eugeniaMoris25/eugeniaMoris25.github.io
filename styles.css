@@ -73,6 +73,7 @@ header {
 nav {
     background-color: #eee;
     padding: 10px;
+    display: none;
 }
 
 nav ul {
@@ -98,6 +99,7 @@ nav a:hover {
 }
 
 section {
+    display: none;
     padding: 20px;
 }
 
