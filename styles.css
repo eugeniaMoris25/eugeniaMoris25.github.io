@@ -1,9 +1,9 @@
-body {
+/* body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-}
+} */
 
 header {
     background-color: #333;
@@ -31,4 +31,28 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+body {
+    background-color: #f0f0f0; /* Fondo gris claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#imagen {
+    width: 300px; /* Ajusta el tamaño según tu preferencia */
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra suave */
+}
+
+#texto {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: #333; /* Texto oscuro */
+    margin-top: 20px;
 }
