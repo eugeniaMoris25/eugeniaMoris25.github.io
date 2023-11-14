@@ -13,6 +13,17 @@
         <p>Passionate Systems Engineer & Computational Mathematician</p>
     </header>
 
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#teaching">Teaching Experience</a></li>
+            <li><a href="#skills">Key Skills</a></li>
+            <li><a href="#interests">Interests and Passions</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <section id="about">
         <h2>About Me</h2>
         <p>Ever since I can remember, I've been drawn to the challenges of puzzles and the ever-evolving world of technology. In 2019, as I wrapped up my undergraduate studies, I delved into the realm of artificial intelligence for my final project. The potential and impact of this technology fascinated me, leading me to pursue further studies in the scientific field, specifically focusing on artificial intelligence.</p>
@@ -53,12 +64,14 @@
     </section>
 
     <script>
-        // Agregar script para el scroll suave
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
+        // Agregar script para cambiar pestañas
+        const navLinks = document.querySelectorAll('nav ul li a');
 
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
+        navLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                document.getElementById(targetId).scrollIntoView({
                     behavior: 'smooth'
                 });
             });
