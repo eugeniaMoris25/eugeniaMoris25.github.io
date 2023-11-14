@@ -14,4 +14,15 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
     });
+
+    // Agregar cambio de tema
+    const body = document.body;
+    const themeSwitcher = document.createElement('div');
+    themeSwitcher.classList.add('theme-switcher');
+    themeSwitcher.textContent = 'Toggle Theme';
+    document.body.appendChild(themeSwitcher);
+
+    themeSwitcher.addEventListener('click', function () {
+        body.classList.toggle('dark-theme');
+    });
 });
